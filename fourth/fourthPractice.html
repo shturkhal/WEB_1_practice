@@ -1,55 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <!-- Варіант 28 -->
+<html lang="uk">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    table {
+      width: 100%;
+      max-width: 800px;
+      border-collapse: collapse;
+      margin: 0 auto;
+      border-radius: 20px; 
+      overflow: hidden; 
+      border: 1px solid #ddd;
+    }
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border: 0px solid #ddd;
+    }
+    th {
+      background-color: rgba(90, 186, 229);
+      color: white;  
+    }
+    .header-phy {
+      background-color: rgba(35, 80, 110);
+      color: white; 
+    }
+    .header-left{
+      background-color: lightgray;
+      color: gray;
+    }
+    .empty-cell {
+      color: transparent;
+    }
+    .gray-bg {
+      background-color: rgba(220, 220, 220, 0.2);
+      color: gray;
+    }
+    .titles-row2 {
+      vertical-align: top;
+    }
+  </style>
 </head>
-
 <body>
-  <table border ="2px" width ="500px">
-    <caption>Таблиця 1</caption>
+  <table>
     <tr>
-      <!-- Title -->
-      <th align="center">Company</th>
-      <th align="center">Q1</th>
-      <th align="center">Q2</th>
-      <th align="center">Q3</th>
-      <th align="center">Q4</th>
+      <th class="header-phy">PHY</th>
+      <th>Bandwidth (as number of data subcarriers)</th>
+      <th class="empty-cell">empty</th>
+      <th>Data bits per subcarrier</th>
+      <th class="empty-cell">empty</th>
+      <th>Time per OFDM symbol (800ns GI)</th>
+      <th class="empty-cell">empty</th>
+      <th class="titles-row2">1 SS</th>
+      <th class="titles-row2">3 SS</th>
+      <th class="titles-row2">4 SS</th>
+      <th class="titles-row2">8 SS</th>
     </tr>
-    <tr>
-      <th align="left">Microsoft</th>
-      <!-- <td colspan="2">1.1 and 2.2</td>
-      <td rowspan="2">2.3 and 3.3</td> -->
-      <td>20.3</td>
-      <td>30.5</td>
-      <td>23.5</td>
-      <td>40.3</td>
+    <tr class="gray-bg">
+      <th class="header-left" rowspan="2">802.11ac</th>
+      <td>234 (80MHz)</td>
+      <td></td>
+      <td>5/6 × log2(256) = 6.67</td>
+      <td></td>
+      <td>4 us</td>
+      <td></td>
+      <td>390 Mbps</td>
+      <td>1.17 Gbps</td>
+      <td>1.56 Gbps</td>
+      <td>-</td>
     </tr>
-    <tr>
-      <th align="left">Google</th>
-      <td>50.2</td>
-      <td>40.63</td>
-      <td>45.23</td>
-      <td>39.3</td>
+    <tr class="gray-bg">
+      <td>2 * 234 (160MHz) X</td>
+      <td>X</td>
+      <td></td>
+      <td>/</td>
+      <td></td>
+      <td>=</td>
+      <td>780 Mbps</td>
+      <td>-</td>
+      <td>3.12 Gbps</td>
+      <td>-</td>
     </tr>
-    <tr>
-      <th align="left">APPLE</th>
-      <td>25.4</td>
-      <td>30.2</td>
-      <td>33.3</td>
-      <td>36.7</td>
+    <tr class="gray-bg">
+      <th class="header-left" rowspan="2">802.11ax</th>
+      <td>980 (80MHz)</td>
+      <td></td>
+      <td>5/6 × log2(1024) = 8.33</td>
+      <td></td>
+      <td>13.6 us</td>
+      <td></td>
+      <td>600 Mbps</td>
+      <td>1.8 Gbps</td>
+      <td>2.4 Gbps</td>
+      <td>4.8 Gbps</td>
     </tr>
-    <tr>
-      <th align="left">IBM</th>
-      <td>20.4</td>
-      <td>15.6</td>
-      <td>22.3</td>
-      <td>29.3</td>
+    <tr class="gray-bg">
+      <td>2 * 980 (160MHz)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.2 Gbps</td>
+      <td>3.6 Gbps</td>
+      <td>4.8 Gbps</td>
+      <td>-</td>
     </tr>
   </table>
 </body>
-
 </html>
