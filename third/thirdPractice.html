@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -11,4 +11,150 @@
       <a href="../index.html"><mark>повернутись назад</mark></a>
     </center>
 </body>
-</html
+</html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Mobile Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Лівий блок */
+        .left-panel {
+            width: 33.33%;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .logo {
+            font-size: 6em;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .menu {
+            display: flex;
+            gap: 0px;
+            margin-bottom: 40px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #bbb;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .how-it-works {
+            font-size: 1.1em;
+            margin-top: 40px;
+            line-height: 1.5;
+        }
+
+        /* Центральний блок для зображення */
+        .center-panel {
+            width: 33.33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .center-panel img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Правий блок із градієнтним фоном */
+      .right-panel {
+          width: 33.33%;
+          background-image: url("images/gradient_back.jpg");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+      }
+
+        .cta-button {
+            position: absolute;
+            bottom: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            text-align: center;
+        }
+        .cta-button span {
+            margin-left: 10px;
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+  <body background="images/girlWithBack.pdf">
+    <div class="container">
+        <!-- Лівий блок -->
+        <div class="left-panel">
+             <!-- <div class="logo">✶</div> -->
+            <div class="menu">
+              <div font-size="8em">✶</div>
+                <a href="#">Home</a>
+                <a href="#">Examples</a>
+                <a href="#">Pricing</a>
+                <a href="#">Demo</a>
+            </div>
+            <div class="title">App Mobile Solutions</div>
+            <div class="subtitle">Try it now</div>
+            <div class="how-it-works">
+                <strong>How it works</strong><br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet quam.
+            </div>
+        </div>
+
+        <!-- Центральний блок для зображення -->
+        <div class="center-panel">
+            <!-- <img src="images/girlWithBack.pdf" alt="girl with headphones"> -->
+        </div>
+
+        <!-- Правий блок із градієнтним фоном -->
+        <div class="right-panel">
+            <div class="cta-button">
+                Global App
+                <span>→</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
