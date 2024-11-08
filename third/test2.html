@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Загальні стилі для сторінки */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+
+        /* Контейнер для двох колонок */
+        .container {
+            display: flex;
+            height: 100vh; /* Висота сторінки */
+        }
+
+        /* Ліва та права частини */
+        .left {
+            display: flex;
+            flex-direction: column; /* Дозволяє розмістити блоки вертикально */
+            width: 50%; /* Ширина лівої частини */
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .right {
+            width: 50%; /* Ширина правої частини */
+            background-image: url("images/gradient_back.jpg");
+            background-size: cover;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Стилі для навігації */
+        .topnav {
+            
+            display: flex;
+            background-color: black;
+            padding: 14px 16px;
+            margin-bottom: 20px; /* Відступ знизу */
+            border: 1px solid white;
+            border-radius: 5px;
+            gap: 0px;
+            margin-bottom: 40px;
+        }
+
+        
+        .topnav a {
+            
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* a:hover {
+            background-color: white;
+            color: black;
+        } */
+        .sectionTitle {
+            margin: 10% 12%;
+            color: white;
+            text-align: left;
+            font-size: 30px;
+            padding: 10px 20px;
+            width: 400px;
+            height: 100px;
+        }
+
+        /* Стиль для розділювальної лінії */
+        .divider {
+            background-color: white; /* Колір лінії */
+            height: 2px; /* Товщина лінії */
+            width: calc(100% + 400px); /* Розширює лінію за межі відступу */
+            margin-left: -110px; /* Компенсує лівий відступ контейнера */
+        }
+
+        .section {
+            margin: 20% 12%;
+            color: white;
+            text-align: left;
+            padding: 10px 20px;
+            width: 300px;
+            height: 200px;
+        }
+        .section2 {
+            display: flex;
+            align-items: center; /* Центрує зображення та текст по вертикалі */
+            margin: 60% 44%;
+            color: white;
+            text-align: right;
+            padding: 10px;
+            width: 350px;
+            height: auto;
+            background-color: black;
+            gap: 0px; /* Відстань між зображенням і текстом */
+        }
+
+        .section2 img {
+            filter: invert(100%);
+            width: 200px;
+            height: 100px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .section2 h3 {
+            /* margin: 0; */
+            font-size: 20px;
+            padding-left: 30px;
+        }
+
+        #arrowStyle {
+            border: 4px solid black;
+            border-radius: 30px;
+            width: 100px;
+            padding: 5px;
+        }
+
+        /* Стиль для центрального зображення поверх */
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -45%);
+            z-index: 10; /* Розміщує зображення поверх інших елементів */
+            width: 50%; /* Задає ширину зображення, змінюйте за необхідності */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="topnav">
+                <a href="https://google.com">*</a>
+                <a href="https://google.com">Home</a>
+                <a href="https://apple.com">Examples</a>
+                <a href="https://microsoft.com">Pricing</a>
+                <a href="https://microsoft.com">Demo</a>
+                <a href="https://microsoft.com">Search Icon</a>
+            </div>
+            <div class="sectionTitle">
+                <h1>App Mobile<br>Solutions</h1>
+                <p><b><u>Try it now</u></b></p>
+            </div>
+            <div class="section">
+                <div class="divider"></div> 
+                <h3>How it works</h3>
+                <p>
+                    <b>Браузер</b> – це програмний застосунок, який дає можливість користувачеві взаємодіяти з текстом,
+                    рисунками або іншою інформацією на гіпертекстовій Веб-сторінці.
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="topnav">
+                <a href="https://google.com">Log in</a>
+                <a href="https://google.com">Sign up</a>
+                 <img src="images/arrow.png" alt="Right Arrow" width="50px" height="50px">
+            </div>
+            <div id="arrowStyle">
+                 <img src="images/arrow.png" alt="Right Arrow" width="50px" height="50px">
+            </div>
+            <div class="section2">
+                <img src="images/global.png" alt="global" width="200px" height="100px" style="filter: invert(100%);"><h3>Global App</h3> </div>
+            
+        </div>
+    </div>
+
+    <!-- Зображення, яке буде розташовано по центру поверх всього -->
+    <img src="images/girl.png" alt="Central Overlay Image" class="overlay-image">
+</body>
+</html>
