@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>
-        /* Загальні стилі для сторінки */
+
         body, html {
             margin: 0;
             padding: 0;
@@ -10,17 +10,16 @@
             font-family: sans-serif;
         }
 
-        /* Контейнер для двох колонок */
+      
         .container {
             display: flex;
-            height: 100vh; /* Висота сторінки */
+            height: 100vh; 
         }
 
-        /* Ліва та права частини */
         .left {
             display: flex;
-            flex-direction: column; /* Дозволяє розмістити блоки вертикально */
-            width: 50%; /* Ширина лівої частини */
+            flex-direction: column; 
+            width: 50%;
             background-color: black;
             color: white;
             padding: 20px;
@@ -28,20 +27,20 @@
         }
         
         .right {
-            width: 50%; /* Ширина правої частини */
+            width: 50%;
             background-image: url("images/gradient_back.jpg");
             background-size: cover;
             padding: 20px;
             box-sizing: border-box;
         }
 
-        /* Стилі для навігації */
+       
         .topnav {
             
             display: flex;
             background-color: black;
             padding: 14px 16px;
-            margin-bottom: 20px; /* Відступ знизу */
+            margin-bottom: 20px; 
             border: 1px solid white;
             border-radius: 5px;
             gap: 0px;
@@ -76,12 +75,11 @@
             height: 100px;
         }
 
-        /* Стиль для розділювальної лінії */
         .divider {
-            background-color: white; /* Колір лінії */
-            height: 2px; /* Товщина лінії */
-            width: calc(100% + 400px); /* Розширює лінію за межі відступу */
-            margin-left: -110px; /* Компенсує лівий відступ контейнера */
+            background-color: white; 
+            height: 2px; 
+            width: calc(100% + 400px); 
+            margin-left: -110px; 
         }
 
         .section {
@@ -94,7 +92,7 @@
         }
         .section2 {
             display: flex;
-            align-items: center; /* Центрує зображення та текст по вертикалі */
+            align-items: center; 
             margin: 60% 44%;
             color: white;
             text-align: right;
@@ -102,7 +100,7 @@
             width: 350px;
             height: auto;
             background-color: black;
-            gap: 0px; /* Відстань між зображенням і текстом */
+            gap: 0px; 
         }
 
         .section2 img {
@@ -127,14 +125,14 @@
             padding: 5px;
         }
 
-        /* Стиль для центрального зображення поверх */
+       
         .overlay-image {
             position: absolute;
             top: 50%;
             left: 45%;
             transform: translate(-50%, -45%);
-            z-index: 10; /* Розміщує зображення поверх інших елементів */
-            width: 50%; /* Задає ширину зображення, змінюйте за необхідності */
+            z-index: 10; 
+            width: 50%; 
             height: auto;
         }
     </style>
@@ -167,18 +165,18 @@
             <div class="topnav">
                 <a href="https://google.com">Log in</a>
                 <a href="https://google.com">Sign up</a>
-                 <img src="images/arrow.png" alt="Right Arrow" width="50px" height="50px">
+                 <!-- <img src="images/arrow.png" alt="Right Arrow" width="50px" height="50px"> -->
             </div>
-            <div id="arrowStyle">
+            <!-- <div id="arrowStyle">
                  <img src="images/arrow.png" alt="Right Arrow" width="50px" height="50px">
-            </div>
+            </div> -->
             <div class="section2">
                 <img src="images/global.png" alt="global" width="200px" height="100px" style="filter: invert(100%);"><h3>Global App</h3> </div>
             
         </div>
     </div>
 
-    <!-- Зображення, яке буде розташовано по центру поверх всього -->
+
     <img src="images/girl.png" alt="Central Overlay Image" class="overlay-image">
 </body>
 </html>
