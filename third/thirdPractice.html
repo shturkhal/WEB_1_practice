@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -133,6 +133,121 @@
     <div class="section">
         <h3>How it works</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet odio. Pellentesque quis lacus non nisl pulvinar sollicitudin nec vel purus. Suspendisse dapibus maximus nibh tempus</p>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('images/groupBack.png');
+            background-size: cover;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .top-links {
+            position: absolute;
+            top: 45px;
+            left: 130px;
+            display: flex;
+            gap: 0;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .top-links a {
+            border-right: 1px solid white;
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        .top-links a:last-child {
+            border-right: none;
+        }
+
+        .right-links {
+            position: absolute;
+            top: 45px;
+            left: calc(100% - 220px); 
+            display: flex;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .right-links a {
+            color: black;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        .right-links a:hover, .top-links a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .arrow-button {
+            position: absolute;
+            top: 300px;
+            left: calc(100% - 150px); 
+            display: flex;
+            padding: 5px;
+            border: 3px solid white;
+            border-radius: 40%;
+        }
+
+        .sectionTitle {
+            position: absolute;
+            top: 190px;
+            left: 130px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .sectionTitle a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .section {
+            position: absolute;
+            top: 560px;
+            left: 130px;
+            color: white;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="right-links">
+        <a href="https://google.com">Log In</a>
+        <a href="https://apple.com">Sign Up</a>
+    </div>
+
+    <div class="top-links">
+        <a href="https://google.com">Home</a>
+        <a href="https://apple.com">Examples</a>
+        <a href="https://microsoft.com">Pricing</a>
+        <a href="https://microsoft.com">Demo</a>
+        <a href="https://microsoft.com"><img src="images/search-icon.svg" alt="Search Icon" height="15" style="filter: invert(1);"></a>
+    </div>
+
+    <div class="arrow-button">
+        <a href="https://microsoft.com"><img src="images/arrow-right.svg" alt="Arrow Icon" height="60" width="80" style="filter: drop-shadow(0 0 5px white);"></a>
+    </div>
+
+    <div class="sectionTitle">
+        <h1>App Mobile<br>Solutions</h1>
+        <a href="https://microsoft.com"><u>Try it now</u></a>
+    </div>
+
+    <div class="section">
+        <h3>How it works</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet odio. Pellentesque quis lacus non nisl pulvinar sollicitudin nec vel purus. Suspendisse dapibus maximus nibh tempus.</p>
     </div>
 </body>
 </html>
