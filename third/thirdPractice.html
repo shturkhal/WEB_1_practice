@@ -1,160 +1,138 @@
-<!-- <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практична робота №3 Штурхаль Іван</title>
-</head>
-<body>
-  <center>
-    <h1>ще не готова</h1>
-      <a href="../index.html"><mark>повернутись назад</mark></a>
-    </center>
-</body>
-</html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Mobile Solutions</title>
     <style>
         body {
+            background-image: url('images/groupBack.png');
+            background-size: cover;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
         }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            align-items: center;
-            height: 100vh;
-        }
-        /* Лівий блок */
-        .left-panel {
-            width: 33.33%;
-            background-color: #1a1a1a;
-            color: white;
-            padding: 40px;
-            box-sizing: border-box;
-        }
-        .logo {
-            font-size: 6em;
-            color: white;
-            margin-bottom: 20px;
-        }
-        .menu {
-            display: flex;
-            gap: 0px;
-            margin-bottom: 40px;
-        }
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 1px solid white;
-            border-radius: 5px;
-        }
-        .title {
-            font-size: 3em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            color: #bbb;
-            margin-bottom: 20px;
-            text-decoration: underline;
-        }
-        .how-it-works {
-            font-size: 1.1em;
-            margin-top: 40px;
-            line-height: 1.5;
-        }
-
-        /* Центральний блок для зображення */
-        .center-panel {
-            width: 33.33%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        .center-panel img {
-            width: 300px;
-            border-radius: 10px;
-        }
-
-        /* Правий блок із градієнтним фоном */
-      .right-panel {
-          width: 33.33%;
-          background-image: url("images/gradient_back.jpg");
-          background-size: cover;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-      }
-
-        .cta-button {
+        
+        .top-links {
             position: absolute;
-            bottom: 20px;
+            top: 45px;
+            left: 130px;
+            display: flex;
+            border: 1px solid white;
+            gap: 0px;
+            color: white;
+        }
+        
+        .top-links a {
+            border-right: 1px solid white;
+        }
+        
+        .top-links a:last-child {
+            border-right: none;
+        }
+
+        .right-links {
+            position: absolute;
+            top: 45px;
+            left: calc(100% - 220px); 
+            display: flex;
+            border: 1px solid black;
+            background-color: transparent;
+            gap: 0px;
+        }
+
+        .right-links a {
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .right-links a:hover {
             background-color: black;
             color: white;
-            padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 2;
-            text-align: center;
-        }
-        .cta-button span {
-            margin-left: 10px;
-            font-size: 1.5em;
-            vertical-align: middle;
         }
 
+        .arrow-button a:hover {
+            background-color: white;
+            color: white;
+            border-radius: 40%;
+        }
+
+        .arrow-button a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        
+        .arrow-button {
+            position: absolute;
+            top: 300px;
+            left: calc(100% - 140px); 
+            display: flex;
+            background-color: transparent;
+            padding: 5px;
+            border: 3px solid white;
+            border-radius: 40%;
+        }
+        
+        .sectionTitle {
+            position: absolute;
+            top: 210px;
+            left: 130px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .section {
+            position: absolute;
+            top: 560px;
+            left: 130px;
+            color: white;
+            width: 300px;
+        }
+
+        .sectionTitle a {
+            color: white;
+            text-decoration: none;
+            padding: 0px;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
-  <body>
-    <div class="container">
-        <!-- Лівий блок -->
-        <div class="left-panel">
-             <!-- <div class="logo">✶</div> -->
-            <div class="menu">
-              <div font-size="8em">✶</div>
-                <a href="#">Home</a>
-                <a href="#">Examples</a>
-                <a href="#">Pricing</a>
-                <a href="#">Demo</a>
-            </div>
-            <div class="title">App Mobile Solutions</div>
-            <div class="subtitle">Try it now</div>
-            <div class="how-it-works">
-                <strong>How it works</strong><br>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet quam.
-            </div>
-        </div>
 
-        <!-- Центральний блок для зображення -->
-        <div class="center-panel">
-            <!-- <img src="images/girlWithBack.pdf" alt="girl with headphones"> -->
-        </div>
+<body>
+    <div class="right-links">
+        <a href="https://google.com">Log In</a>
+        <a href="https://apple.com">Sign Up</a>
+    </div>
+    
+    <div class="top-links">
+        <a href="https://google.com">Home</a>
+        <a href="https://apple.com">Examples</a>
+        <a href="https://microsoft.com">Pricing</a>
+        <a href="https://microsoft.com">Demo</a>
+        <a href="https://microsoft.com"><img src="images/search-icon.svg" alt="Search Icon" height="15" style="filter: invert(1);"></a>
+    </div>
 
-        <!-- Правий блок із градієнтним фоном -->
-        <div class="right-panel">
-            <div class="cta-button">
-                Global App
-                <span>→</span>
-            </div>
-        </div>
+    <div class="arrow-button">
+        <a href="https://microsoft.com"><img src="images/arrow-right.svg" alt="arrow Icon" height="45" style="filter: drop-shadow(0 0 5px white);"></a>
+    </div>
+    
+    <div class="sectionTitle">
+        <h1>App Mobile<br>Solutions</h1>
+        <a href="https://microsoft.com"><u>Try it now</u></a>
+    </div>
+
+    <div class="section">
+        <h3>How it works</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet odio. Pellentesque quis lacus non nisl pulvinar sollicitudin nec vel purus. Suspendisse dapibus maximus nibh tempus</p>
     </div>
 </body>
 </html>
